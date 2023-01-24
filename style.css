@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia+Sans");
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia Sans", serif;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+                                      
+                                            /** Panel izquierdo */
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2.35fr;
+    box-shadow: 0 35px 55px blue;
+}
+.container .left_side
+{
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+.container .right_side
+{
+    position: relative;
+    background: lightblue;
+    padding: 40px;
+}
+button
+{
+    padding: 10px;
+    font-size: 18px;
+    color: darkblue;
+    border: none;
+    outline: auto;
+    background: rgb(195, 225, 235);
+}
+button:active
+{
+    background: blueviolet;
+}
+.container .left_side .profile_text
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid ;
+}
+.container .left_side .profile_text h1
+{
+    font-weight: bolder;
+}
+.container .left_side .profile_text h2
+{
+    font-weight: 50;
+}
+.contact_info ul
+{
+    position: relative;
+}
+.contact_info ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.contact_info ul li a:link, .contact_info ul li a:visited, .contact_info ul li a:hover, .contact_info ul li a:active 
+{
+    text-decoration: none;
+    color: black;
+}
+.contact_info ul li:hover, .contact_info ul li a:hover 
+{
+    color: grey;
+}
+.contact_info ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: blueviolet;
+}
+.title
+{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.contact_info_education ul li
+{
+    margin-bottom: 20px;
+}
+.contact_info_education ul li
+{
+    color: blueviolet;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.contact_info_education ul li h4
+{
+    font-weight: bold;
+    color: black;
+}
+.contact_info_education ul li h6
+{
+    font-weight: lighter;
+    color: black;
+}
+.contact_info_languages ul li
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact_info_languages ul li .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: darkblue;
+    display: block;
+    margin-top: 5px;
+}
+.contact_info_languages ul li .percent .amount1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 98%;
+    background-color: rgb(63, 124, 214);
+}
+.contact_info_languages ul li .percent .amount2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90%;
+    background-color: rgb(63, 124, 214);
+}
+.contact_info_languages ul li .percent .amount3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(63, 124, 214);
+}
+.contact_info_languages ul li .percent .amount4
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 38%;
+    background-color: rgb(63, 124, 214);
+}
+
+                                        /** Panel derecho */
+
+.right_side .about
+{
+    margin-bottom: 50px;
+}
+.right_side .title2
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.right_side p
+{
+    color: #333;
+    margin-bottom: -20px;
+}
+.right_side .company_boxes .about_company .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.company_boxes .about_company .box .year_company h5
+{
+    text-transform: uppercase;
+    color: rgb(133, 90, 90);
+    font-weight: 550;
+    font-size: 14px;
+    padding-right: 25px;
+}
+.company_boxes .about_company .box .text h4
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(128, 85, 85);
+}
+.container-slider
+{
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: rgba(71, 74, 241, 0.3);
+    position: relative;
+}
+.slider
+{
+    display: flex;
+    width: 400%;
+    height: 200px;
+}
+.slider_section
+{
+    width: 100%;
+}
+.slider-img
+{
+    display: block;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+.slider-img:hover
+{
+    display: block;
+}
+.slider-btn
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(87, 250, 236, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slider-btn:hover
+{
+    background: rgba(87, 250, 236, 0.75);
+}
+.slider-btn-right
+{
+    right: 21%;
+}
+.slider-btn-left
+{
+    left: 1%;
+}
+.about_skills .box 
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 40px;
+
+}
+.about_skills .title2
+{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.about_skills .box h4
+{
+    text-transform: uppercase;
+    color: blueviolet;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.about_skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: darkgray;
+}
+.about_skills .box .percent .amount5, .amount6, .amount7
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: darkmagenta;
+}
+.about_interests ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style-type: none;
+}
+.about_interests ul li
+{
+    font-weight: 590;
+    margin: 10px 0;
+    padding-right: 25px;
+    white-space: nowrap;
+}
+.about_interests ul li .fa
+{
+    color: darkorchid;
+    font-size: 18px;
+    width: 20px;
+    padding-right: 25px;
+}
+
+                                        /** Responsive design*/
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about_interests ul li
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px)
+{
+    .right_side .about .box
+    {
+        flex-direction: column;
+    }
+    .right_side .about .box .year_company, .text
+    {
+        margin-bottom: 5px;
+    }
+    .about_skills .box_company
+    {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .right_side .about_interests ul
+    {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .right_side .about_interests ul li .fa
+    {
+        padding-right: 40px;
+    }
+}
